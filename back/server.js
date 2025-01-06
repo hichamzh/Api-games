@@ -1,10 +1,10 @@
 const express = require('express')
 const cors = require ('cors')
 
-const PORT = 3000
+// const PORT = 3000
 
 const corsOptions = {
-    origin: "https://ton-frontend-url.com",
+    origin: "https://api-games-hicham.vercel.app/",
   };
 const app = express()
 
@@ -12,10 +12,10 @@ app.use(cors(corsOptions));
 
 
 
-require('./routes/getAllGames')(app)
-require('./routes/getGiveaways')(app)
+require('./api/allgames')(app)
+require('./api/giveaways')(app)
 
 
 
 
-app.listen(PORT, () => console.log(`Serveur en cours sur le port ${PORT}`));
+// app.listen(PORT, () => console.log(`Serveur en cours sur le port ${PORT}`));

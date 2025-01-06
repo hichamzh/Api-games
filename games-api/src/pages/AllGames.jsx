@@ -16,7 +16,7 @@ export const AllGames = () => {
     }
 
     try {
-      const response = await axios.get("http://localhost:3000/allgames");
+      const response = await axios.get("https://back-api-games.vercel.app/api/allgames");
       const data = response.data;
       localStorage.setItem("gamesData", JSON.stringify(data));
       console.log("Données récupérées depuis l'API !");
