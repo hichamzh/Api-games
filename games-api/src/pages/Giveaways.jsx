@@ -14,7 +14,7 @@ export const Giveaways = () => {
     }
 
     try {
-      const response = await axios.get("http://localhost:3000/api/giveaways");
+      const response = await axios.get("https://back-api-games.vercel.app/api/giveaways");
       const data = response.data;
 
       localStorage.setItem("giveawaysData", JSON.stringify(data));
