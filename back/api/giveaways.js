@@ -2,7 +2,7 @@ import axios from 'axios'
 import cors from 'cors'
 
 const corsOptions = {
-    origin: ["https://api-games-hicham.vercel.app/", "http://localhost:5173"],
+    origin: ["https://api-games-hicham.vercel.app", "http://localhost:5173"],
   };
 
 export default async function handler(req, res) {
