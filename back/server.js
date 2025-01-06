@@ -4,7 +4,7 @@ const cors = require ('cors')
 // const PORT = 3000
 
 const corsOptions = {
-    origin: "https://api-games-hicham.vercel.app/",
+    origin: ["https://api-games-hicham.vercel.app/", "http://localhost:5173"],
   };
 const app = express()
 
